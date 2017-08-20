@@ -3,7 +3,7 @@ button.onclick=function(){
     //CREATE A REQUEST TO THE COUNTER END POINT
     var request=new XMLhttpRequest();
     // capturing and storinng the response in a variable
-    request.onreadystatechange=function(){
+    request.onreadyStatechange=function(){
         if(request.onreadystate===XMLhttpRequest.DONE){
             //TAKE SOME ACTION
             if(request.status===200){
