@@ -1,7 +1,7 @@
 var button=document.getElementById('counter');
 button.onclick=function(){
     //CREATE A REQUEST TO THE COUNTER END POINT
-    var request=new XMLhttprequest();
+    var request=new XMLhttpRequest();
     // capturing and storinng the response in a variable
     request.onreadystatechange=function(){
         if(request.readystate==XMLHttpRequest.DONE){
