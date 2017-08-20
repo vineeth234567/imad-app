@@ -39,3 +39,10 @@ var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+var names[];
+app.get('/submit-name/:name',function(req,res){
+   var name=req.params.name;
+   names.push(name);
+   //JSON:JAVA SCRIPT ONLINE NOTATION
+   res.send(JSON.stringify(names));
+});
